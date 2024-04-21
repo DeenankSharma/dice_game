@@ -2,8 +2,9 @@ const btn = document.querySelector("button");
 const img1 = document.querySelector(".image1");
 const img2 = document.querySelector(".image2");
 const winner = document.querySelector(".winner");
-
+var audio =new Audio('dice-142528-[AudioTrimmer.com].mp3');
 function shuffle() {
+    audio.play();
     var n1, n2;
     n1 = Math.floor(Math.random() * 6) + 1;
     n2 = Math.floor(Math.random() * 6) + 1;
